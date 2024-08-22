@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: "Spring Data Demo"
+
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/postgres
+    schemas: public
+    user: postgres
+    password: postgres
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+  jdbc:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+logging:
+  level:
+    org:
+      springframework:
+        web: TRACE
